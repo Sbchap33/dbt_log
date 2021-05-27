@@ -36,3 +36,9 @@ models:
       # Applies to all files under models/example/
       example:
           materialized: view
+config-version: 2
+
+vars:
+  fivetran_log:
+    fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
+    fivetran_log_using_triggers: false # this will disable only trigger_table logic
